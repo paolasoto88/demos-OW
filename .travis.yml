@@ -5,6 +5,15 @@ python:
 install:
    - pip3 install -r requirements.txt 
    - pip3 install .
+notifications:
+  email: false
+  slack:
+    rooms:
+       - secure: "f239g/9R8sh8Pt2MTvXP4r8XlncK3GzrRrWraPqWdhIhdPb1gN9z0mU77bG+oMRV3GFhUykN1s97Z3CpizZDrM3HT2tyJIXsldhthNSx+IRoZnYledQ4hvM6uI8AVzSloIups+5k5zwTJkFJDftLUm5EVIMCj7oUsHMJ9dcir63Ts2XRSbAVIZZOkPr9kOTye85DQeKkW1TpMJZpgukf0HQ/LIuGYeahohE09FB8NmWQUasGTDLlgW7LNmpo5jemsJ0yXkfejbkqpn8EMZFUNQ83emfAPqur4N2YsCvtpigNISAaO4q6ToB1TKKvbjYgL4CvyQeckbEUi1bik06vztDYcd93asbyqTsXwCu8+cYHmUVdCTDAmpi78H8USE/Ix47XqI8NhGMv0yq3XHi5Hxn/jdzcuwzufmmVpG89WWt6M9R3ayrnESkQWlSCTKCHkjruh4ix/+GtiprjpRZTS90EHSGFw2lqA87wUO7xwe4sf33vVcq2Ja8HfgCT3cY/VQ2BB9SVXLINpWUPC5mE5cNww3CIY29+CqYNnTZvyKPDluJ3Pmn+JCQzMcbOzHGhVhEsqqGzn/EE2utDdJ7JM1Xv2NP7MRKDknPjQG9js36GLKS6u7znxeRdeCPw0kvGtTdJk/Xg0CKZfXTVU7DfNhWic5vtG6QFSghAxDoO130="
+    on_pull_requests: false
+    on_success: change
+    on_failure: always
+  
 # command to run scripts
 script:
    - python hello.py
