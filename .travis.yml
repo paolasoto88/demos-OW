@@ -5,5 +5,7 @@ python:
 install:
    - pip3 install -r requirements.txt 
    - pip3 install .
-# command to run tests
-script: hello.py
+# command to run scripts
+script:
+   - cd demos-OW
+   - python hello.py
