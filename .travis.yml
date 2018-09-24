@@ -7,5 +7,4 @@ install:
    - pip3 install .
 # command to run scripts
 script:
-   - cd demos-OW
    - python hello.py
